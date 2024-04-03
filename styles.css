@@ -2,6 +2,7 @@
     --main-bg-color:  #fdfdfd;
     --main-font: "Merriweather", serif;
     --main-font-color: #636262;
+    --secondary-font-color: #c7c7c7;
     --accent-color: #2a3640;
     --action-color: #50BFB4;
   }
@@ -69,10 +70,13 @@
   
   fieldset {
     border: 0px;
+    width: 95vw;
   }
 
   legend {
     font-size: 1.3em;
+    align-self: flex-start;
+    font-weight:700;
   }
 
   form {
@@ -80,4 +84,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .label-input-pair {
+    display: flex;
+    flex-direction: column;
   }
