@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
       <link href="normalize.css" rel="stylesheet">
       <link href="styles.css" rel="stylesheet">
       <title>Responsive Form</title>
@@ -13,22 +13,33 @@
   </head>
   <body>
     <div class="container">
-      <header>the code review</header>
+      <header><h1>the code review</h1></header>
       <section class="welcome">
         <h2>Signup for our newsletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox</p>
+        <hr class="first-line">
+        <hr class="second-line">
       </section>
-      <form method="POST">
+      <form action="index.html" method="POST">
         <fieldset>
           <legend>Contact Information</legend>
-          <label for="fname">Full Name</label>
-          <input type="text" id="fname" name="fname" placeholder="Required" required>
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="Required" required>
-          <label for="phone">Phone Number</label>
-          <input type="phone" id="phone" name="phone">
-          <label for="address">Street Address</label>
-          <input type="text" id="address" name="address">
+          <div class="label-input-pair">
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Required" required>
+          </div>
+          <div class="label-input-pair">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Required" required>
+          </div>
+          <div class="label-input-pair">
+            <label for="phone">Phone Number</label>
+            <input type="phone" id="phone" name="phone">
+          </div>
+          <div class="label-input-pair">
+            <label for="address">Street Address</label>
+            <input type="text" id="address" name="address">
+          </div>
+          <div class="label-input-pair">
           <label for="state">State</label>
           <!-- This select list was taken from https://www.freeformatter.com/usa-state-list-html-select.html -->
           <select id="state" name="state">
@@ -88,23 +99,36 @@
             <option value="WY">Wyoming</option>
           </select>
           <!-- End borrowed code for state select -->
-          <label for="zipcode">Zip Code</label>
-          <input type="text" id="zipcode" name="zipcode">
+          </div>
+          <div class="label-input-pair">
+            <label for="zipcode">Zip Code</label>
+            <input type="text" id="zipcode" name="zipcode">
+          </div>
         </fieldset>
         <fieldset>
           <legend>Newsletter</legend>
           <p>Select the newsletters you would like to receive</p>
-          <input type="checkbox" id="htmlnews" name="newstype">
-          <label for="htmlnews">HTML News</label>
-          <input type="checkbox" id="cssnews" name="newstype">
-          <label for="cssnews">CSS News</label>
-          <input type="checkbox" id="jsnews" name="newstype">
-          <label for="jsnews">JavaScript News</label>
+          <div class="newsletter-pair">
+            <input type="checkbox" id="htmlnews" name="newstype">
+            <label for="htmlnews">HTML News</label>
+          </div>
+          <div class="newsletter-pair">
+            <input type="checkbox" id="cssnews" name="newstype">
+            <label for="cssnews">CSS News</label>
+          </div>
+          <div class="newsletter-pair">
+            <input type="checkbox" id="jsnews" name="newstype">
+            <label for="jsnews">JavaScript News</label>
+          </div>
           <p>Newsletter format</p>
-          <input type="radio" id="htmlformat" name="formattype">
-          <label for="htmlformat">HTML</label>
-          <input type="radio" id="ptextformat" name="formattype">
-          <label for="ptextformat">Plain text</label>
+          <div class="newsletter-pair">
+            <input type="radio" id="htmlformat" name="formattype">
+            <label for="htmlformat">HTML</label>
+          </div>
+          <div class="newsletter-pair">
+            <input type="radio" id="ptextformat" name="formattype">
+            <label for="ptextformat">Plain text</label>
+          </div>
           <p>Other topics you'd like to hear about</p>
           <textarea></textarea>
           <button type="submit">Sign Up</button>
