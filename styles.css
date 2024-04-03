@@ -2,7 +2,8 @@
     --main-bg-color:  #fdfdfd;
     --main-font: "Merriweather", serif;
     --main-font-color: #636262;
-    --secondary-font-color: #c7c7c7;
+    --secondary-font-color: #bbbbbb;
+    --label-color: #7b7b7b;
     --accent-color: #2a3640;
     --action-color: #50BFB4;
   }
@@ -21,14 +22,21 @@
     background-color: var(--main-bg-color);
   }
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   header {
     display: flex;
+    align-self: center;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     background-color: var(--accent-color);
     color: var(--main-bg-color);
+    width: 100%;
     height: 80px;
   }
 
@@ -37,45 +45,62 @@
     text-transform: uppercase;
     font-size: 1.5em;
   }
+  
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
   .welcome {
+    align-self: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 80%;
+  }
+
+  .welcome p {
+    max-width: 85%;
+    margin: 20px 0 15px 0;
+    font-size: 1.1em;
+    line-height: 1.4;
+    color: var(--secondary-font-color)
   }
 
   .first-line {
-    border: 5px solid var(--main-font-color);
+    border: 3px solid var(--main-font-color);
     box-sizing: border-box;
-    width: 90%;
+    width: 98%;
+    margin-top: 20px;
     margin-bottom: 2px;
   }
 
   .second-line {
     border: 2px solid var(--main-font-color);
     box-sizing: border-box;
-    width: 90%;
+    width: 98%;
     margin-top: 0px;
-  }
-  
-  fieldset {
-    border: 0px;
-    width: 95vw;
-  }
-
-  legend {
-    font-size: 1.3em;
-    align-self: flex-start;
-    font-weight:700;
   }
 
   form {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+  }
+  
+  fieldset {
+    border: 0px;
+    margin-top: 20px;
+  }
+
+  legend {
+    font-size: 1.3em;
+    align-self: flex-start;
+    font-weight:700;
   }
 
   .label-input-pair {
