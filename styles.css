@@ -1,12 +1,12 @@
 :root {
-    --main-bg-color:  #fdfdfd;
+    --main-bg-color:  #fdf9e9;
     --main-font: "Merriweather", serif;
     --main-font-color: #636262;
     --secondary-font-color: #bbbbbb;
     --label-color: #7b7b7b;
-    --input-color: #f0f0f0;
-    --accent-color: #2a3640;
-    --action-color: #50BFB4;
+    --input-color: #fff5cf;
+    --accent-color: #59342C;
+    --action-color: #A65874;
   }
 
 * {
