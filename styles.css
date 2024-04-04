@@ -6,6 +6,7 @@
     --label-color: #7b7b7b;
     --input-color: #fff5cf;
     --accent-color: #59342C;
+    --secondary-accent: #f9ad6a;
     --action-color: #A65874;
   }
 
@@ -156,11 +157,30 @@
   }
 
   option:not(:disabled) {
-    color: var(--main-font-color);
+    color: var(--main-bg-color);
   }
 
   #zipcode {
     width: 50%;
+  }
+
+  input[type="text"]:focus,
+  #email:focus,
+  #phone:focus,
+  #state:focus,
+  textarea:focus {
+    outline: none;
+    color: white;
+    background-color: var(--secondary-accent);
+    transition: background-color 0.5s ease-in;
+  }
+
+  input:focus::placeholder {
+    color:var(--main-bg-color);
+  }
+
+  #state:focus {
+    color: var(--main-bg-color);
   }
 
   input[type="radio"],
