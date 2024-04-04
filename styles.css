@@ -126,6 +126,10 @@
     color: var(--label-color);
   }
 
+  textarea {
+    padding-top: 10px;
+  }
+
   input[type="text"],
   #email,
   #phone,
