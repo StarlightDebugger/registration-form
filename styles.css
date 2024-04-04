@@ -175,7 +175,8 @@
     transition: background-color 0.5s ease-in;
   }
 
-  input:focus::placeholder {
+  input:focus::placeholder,
+  textarea:focus::placeholder {
     color:var(--main-bg-color);
   }
 
