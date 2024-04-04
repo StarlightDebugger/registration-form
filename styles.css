@@ -140,11 +140,15 @@
     padding-inline-end: 1.2em;
   }
 
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--secondary-font-color);
+    font-style: italic;
+  }
+
   #fname::placeholder,
   #email::placeholder {
     text-align: right;
-    font-style: italic;
-    color: var(--secondary-font-color);
   }
 
   #state {
